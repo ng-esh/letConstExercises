@@ -1,0 +1,26 @@
+## **ES5 Global Constants**
+
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+
+## **ES2015 Global Constants**
+let PI = 3.14
+PI = 42;
+
+## **Quiz**
+
+- What is the difference between var and let?
+You can reassign, redeclare and mutate with var, the variables declared with var globally are added to the window object and have the ability to override/overwrite the built in existing objects if named with keywords that exist in your browser already. You can reassign and mutate with let but you cannot redeclare variables again. The variables made are scoped to the code block in which they are declared and the variables defined with let are not added to the window. 
+
+- What is the difference between var and const?
+You can reassign, redeclare and mutate with var, the variables declared with var globally are added to the window object and have the ability to override/overwrite the built in existing objects if named with keywords that exist in your browser already. You can neither reassign nor redeclare variables declared with const but it is possible to mutate the contents of a variable declared with const, they are also scoped to the code block in which they are declared.
+
+- What is the difference between let and const?
+You can reassign and mutate with let but you cannot redeclare variables again. With const, you can neither reassign nor redeclare variables but it is possible to mutate the contents of the variable. Additionally, when first declaring a variable with const you must assign an initial value, otherwise the browser throws a syntax error. Which unlike let, allows you to declare a variable without that first initial value, instead of throwing a syntax error, it just registers it as undefined.  
+
+- What is hoisting?
+Hoisting is what happens to variable declarations made with the var keyword when the code is first run. Those declarations are essentially "moved up" to the top of your code and run first without their initialization values. 
+
+
+##
